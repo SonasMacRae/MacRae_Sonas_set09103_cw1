@@ -38,6 +38,7 @@ def developer(search):
                 return render_template("developerpage.html", developer=output, consoleList=consoleList)
 
 # Page that displays all of the consoles
+@app.route("/console"/)
 @app.route("/allconsoles/")
 def all():
         return render_template("searchconsoles.html", consoleList=consoleInput)
